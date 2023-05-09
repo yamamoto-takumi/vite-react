@@ -7,4 +7,10 @@ export default defineConfig({
   ? "vite-react" 
   : "./",
   plugins: [react()],
+  server: {
+    https:{
+      key:'localhost-key.pem',
+      cert: 'localhost.pem'
+    }
+  }
 })
